@@ -7,3 +7,31 @@
   clip: rect(1px, 1px, 1px, 1px);
   white-space: nowrap; /* added line */
 }
+
+.button {
+  display: inline-block;
+  background: #c7d2e9;
+  border-radius: 4px;
+  color: #000;
+  font-size: 2.2rem;
+  padding: $s-xs $s-m;
+  border: 2px solid #c7d2e9;
+  transition: color 0.25s ease;
+
+  @media (prefers-reduced-motion) {
+    transition: none;
+  }
+
+  &:not(span) {
+    &:focus {
+      outline: none;
+      border-color: #ffc002;
+    }
+
+    &:hover {
+      background: #000;
+      border-color: #000;
+      color: #c7d2e9;
+    }
+  }
+}

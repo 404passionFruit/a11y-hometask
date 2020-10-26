@@ -53,10 +53,5 @@ export default {
 </script>
 
 <style lang="scss">
-.page-wrapper {
-  &:focus {
-    outline: none;
-    border: 0;
-  }
-}
+//
 </style>

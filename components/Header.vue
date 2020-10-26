@@ -1,13 +1,15 @@
 <template>
   <header>
+    <SkipLink />
     <LangSwitch />
   </header>
 </template>
 
 <script>
+import SkipLink from '@/components/Header/SkipLink'
 import LangSwitch from '@/components/Header/LangSwitch'
 export default {
-  components: { LangSwitch },
+  components: { SkipLink, LangSwitch },
 }
 </script>
 

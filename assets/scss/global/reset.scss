@@ -34,3 +34,7 @@ main {
 a {
   background-color: transparent;
 }
+
+[tabindex='-1'] {
+  outline: none;
+}

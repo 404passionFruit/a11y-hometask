@@ -11,6 +11,7 @@
       "
       :aria-hidden="$i18n.locale === locale.code"
       :tag="$i18n.locale === locale.code ? 'span' : 'a'"
+      class="button"
       v-text="locale.name"
     />
   </div>
@@ -22,15 +23,6 @@ export default {}
 
 <style lang="scss" scoped>
 .languages {
-  * {
-    display: inline-block;
-    background: #c7d2e9;
-    border-radius: 4px;
-    color: #000;
-    font-size: 2.2rem;
-    padding: $s-xs $s-m;
-  }
-
   * + * {
     margin-left: $s-s;
   }
