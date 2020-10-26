@@ -1,7 +1,7 @@
 <template>
   <div>
     <div ref="wrapper" tabindex="-1" class="page-wrapper">
-      <header>Header</header>
+      <HeaderComponent />
       <div><Nuxt /></div>
       <footer>Footer</footer>
     </div>
@@ -18,7 +18,9 @@
 </template>
 
 <script>
+import HeaderComponent from '@/components/Header'
 export default {
+  components: { HeaderComponent },
   data() {
     return {
       message: '',

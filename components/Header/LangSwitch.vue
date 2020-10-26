@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="languages">
     <nuxt-link
       v-for="locale in $i18n.locales"
       :key="locale.code"
@@ -11,12 +11,28 @@
       "
       :aria-hidden="$i18n.locale === locale.code"
       :tag="$i18n.locale === locale.code ? 'span' : 'a'"
-    >
-      {{ locale.name }}
-    </nuxt-link>
+      v-text="locale.name"
+    />
   </div>
 </template>
 
 <script>
 export default {}
 </script>
+
+<style lang="scss" scoped>
+.languages {
+  * {
+    display: inline-block;
+    background: #c7d2e9;
+    border-radius: 4px;
+    color: #000;
+    font-size: 2.2rem;
+    padding: $s-xs $s-m;
+  }
+
+  * + * {
+    margin-left: $s-s;
+  }
+}
+</style>

@@ -1,14 +1,12 @@
 <template>
   <main>
     {{ $t('hello') }}
-    <LangSwitch />
   </main>
 </template>
 
 <script>
-import LangSwitch from '@/components/LangSwitch'
 export default {
-  components: { LangSwitch },
+  components: {},
 }
 </script>
 
