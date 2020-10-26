@@ -40,12 +40,20 @@ export default {
         return
       }
 
-      if (this.$refs.wrapper) {
-        this.$refs.wrapper.focus()
+      if (from.name.split('__')[0] === to.name.split('__')[0]) {
+        this.message = this.$t('menu.announce.onLocaleChange')
+      } else {
+        // TODO: make this maintainable for nested routes
+        const title = this.$t(
+          `pages.${to.name.split('__')[0].replace('/', '')}.h1`
+        )
+        this.message = this.$t('menu.announce.onRouteChange', {
+          page: title,
+        })
       }
 
-      if (from.name.split('__')[0] === to.name.split('__')[0]) {
-        this.message = this.$t('menu.locale.onChangeAnnounce')
+      if (this.$refs.wrapper) {
+        this.$refs.wrapper.focus()
       }
     },
   },

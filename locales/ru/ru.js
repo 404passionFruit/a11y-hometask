@@ -9,7 +9,10 @@ export default {
         EN: 'Английский',
         RU: 'Русский',
       },
-      onChangeAnnounce: 'Язык изменен на русский',
+    },
+    announce: {
+      onLocaleChange: 'Язык изменен на русский',
+      onRouteChange: 'Переход на страницу {page}',
     },
   },
   pages: {

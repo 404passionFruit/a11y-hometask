@@ -9,7 +9,10 @@ export default {
         EN: 'English',
         RU: 'Russian',
       },
-      onChangeAnnounce: 'Language has been changed to English',
+    },
+    announce: {
+      onLocaleChange: 'Language has been changed to English',
+      onRouteChange: 'Navigated to {page} page',
     },
   },
   pages: {
