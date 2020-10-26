@@ -14,7 +14,7 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [],
+  css: ['@/assets/scss/global.scss'],
 
   // Prepended Scss
   styleResources: {
@@ -36,7 +36,41 @@ export default {
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
-  modules: [],
+  modules: ['nuxt-i18n'],
+
+  // i18n https://i18n.nuxtjs.org/setup
+  i18n: {
+    locales: [
+      {
+        code: 'ru',
+        iso: 'ru',
+        name: 'RU',
+        file: 'ru/ru.js',
+      },
+      {
+        code: 'en',
+        iso: 'en',
+        name: 'EN',
+        file: 'en/en.js',
+      },
+    ],
+    defaultLocale: 'ru',
+    detectBrowserLanguage: {
+      fallbackLocale: 'ru',
+      alwaysRedirect: false,
+      onlyOnRoot: true,
+      useCookie: true,
+    },
+    vueI18n: {
+      fallbackLocale: 'ru',
+    },
+    vuex: {
+      syncLocale: false,
+    },
+    lazy: true,
+    langDir: 'locales/',
+    seo: true,
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},

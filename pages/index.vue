@@ -1,9 +1,15 @@
 <template>
-  <main>Hello Worls</main>
+  <main>
+    {{ $t('hello') }}
+    <LangSwitch />
+  </main>
 </template>
 
 <script>
-export default {}
+import LangSwitch from '@/components/LangSwitch'
+export default {
+  components: { LangSwitch },
+}
 </script>
 
 <style lang="scss">
