@@ -7,7 +7,7 @@
         :hidden="isOpen ? false : 'true'"
         tabindex="-1"
         @keyup.esc.prevent="closeModal"
-        @click.exact="closeModal"
+        @click.self="closeModal"
       >
         <div
           ref="dialog"
@@ -20,7 +20,9 @@
           <button class="close" aria-label="Закрыть" @click="closeModal">
             Х
           </button>
-          <h2 id="modaHeadinglID">Вход</h2>
+          <LoginForm>
+            <h2 id="modaHeadinglID" slot="heading">Вход</h2>
+          </LoginForm>
         </div>
       </div>
     </portal>
@@ -29,8 +31,10 @@
 
 <script>
 import 'wicg-inert/dist/inert.min.js'
+import LoginForm from '@/components/Forms/LoginForm'
 
 export default {
+  components: { LoginForm },
   data() {
     return {
       isOpen: false,
@@ -53,12 +57,12 @@ export default {
     closeModal() {
       const el = document.querySelector('#page-wrapper')
       el.inert = false
-      this.isOpen = false
 
       clearTimeout(this.timerClose)
       this.timerClose = setTimeout(() => {
         this.lastFocus.focus()
         this.lastFocus = null
+        this.isOpen = false
       }, 200)
     },
   },
