@@ -24,7 +24,7 @@ export default {
   top: -200px;
 
   &:focus {
-    position: static;
+    top: $s-xl;
   }
 }
 </style>

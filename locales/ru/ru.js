@@ -44,4 +44,8 @@ export default {
       h1: 'Онлайн-магазин',
     },
   },
+  modal: {
+    openButton: 'Войти',
+    closeButton: 'Закрыть окно',
+  },
 }

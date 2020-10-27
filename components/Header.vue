@@ -25,13 +25,11 @@ export default {
 </script>
 
 <style lang="scss">
-.header {
-  max-width: $w-content-max - ($s-xl * 2);
-  padding: $s-xl;
-  margin: auto;
-}
 .header-row {
   display: flex;
+  max-width: $w-content-max - ($s-xl * 2);
+  margin: auto;
+  padding: $s-xl;
 
   > * + * {
     padding-left: $s-m;

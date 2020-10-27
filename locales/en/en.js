@@ -44,4 +44,8 @@ export default {
       h1: 'Online store',
     },
   },
+  modal: {
+    openButton: 'Login',
+    closeButton: 'Close dialog',
+  },
 }
