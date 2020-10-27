@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container video-section">
     <h2>Онлайн-трансляция</h2>
     <iframe
       width="560"
@@ -18,5 +18,15 @@
 </script>
 
 <style lang="scss">
-//
+.video-section {
+  margin-bottom: $s-xxl;
+
+  h2 {
+    margin-bottom: $s-xl;
+  }
+
+  iframe {
+    max-width: 100%;
+  }
+}
 </style>

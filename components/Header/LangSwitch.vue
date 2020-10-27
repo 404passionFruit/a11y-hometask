@@ -14,6 +14,7 @@
             })
       "
       :tag="$i18n.locale === locale.code ? 'span' : 'a'"
+      :role="$i18n.locale === locale.code ? false : 'button'"
       class="button"
       v-text="locale.name"
     />

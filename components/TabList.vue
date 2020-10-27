@@ -99,11 +99,65 @@ export default {
 
 <style lang="scss">
 .tabs-wrapper {
+  margin: $s-xxl 0;
+
   h2,
   .tabs-list {
     max-width: $w-content-max - ($s-xl * 2);
     padding: 0 $s-xl;
     margin: 0 auto;
+  }
+
+  h2 {
+    margin-bottom: $s-l;
+  }
+
+  button {
+    display: inline-block;
+    color: #000;
+    font-size: 2.2rem;
+    border: none;
+    text-decoration: underline;
+    background: transparent;
+    box-shadow: none;
+    cursor: pointer;
+
+    &:hover {
+      color: blue;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #ffc002;
+    }
+
+    + * {
+      margin-left: $s-s;
+    }
+  }
+
+  button[aria-selected] {
+    background: #c7d2e9;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: $s-xs $s-s;
+    border: 2px solid #c7d2e9;
+    transition: color 0.25s ease;
+
+    @media (prefers-reduced-motion) {
+      transition: none;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #ffc002;
+    }
+
+    &:hover {
+      background: #000;
+      border-color: #000;
+      color: #c7d2e9;
+    }
   }
 }
 </style>

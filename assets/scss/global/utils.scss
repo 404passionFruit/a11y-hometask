@@ -16,7 +16,6 @@
   font-size: 2.2rem;
   padding: $s-xs $s-s;
   border: 2px solid #c7d2e9;
-  cursor: pointer;
   transition: color 0.25s ease;
 
   @media (prefers-reduced-motion) {
@@ -24,6 +23,8 @@
   }
 
   &:not(span) {
+    cursor: pointer;
+
     &:focus {
       outline: none;
       border-color: #ffc002;
@@ -64,5 +65,21 @@
     @media screen and (min-width: 78rem) {
       width: 33.33%;
     }
+  }
+}
+
+.text-link {
+  color: green;
+
+  &:visited {
+    color: green;
+  }
+
+  &:hover {
+    color: blue;
+  }
+
+  &:focus {
+    outline: #ffc002;
   }
 }

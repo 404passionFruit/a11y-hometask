@@ -12,6 +12,7 @@
       <div>
         <!-- TODO Nuxt Link translation -->
         <a
+          class="text-link"
           href="/events"
           :aria-labelledby="`${event.id}-link ${event.id}-title`"
           :id="`${event.id}-link`"

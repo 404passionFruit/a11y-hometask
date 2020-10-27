@@ -2,16 +2,25 @@
   <nav class="nav">
     <ul>
       <li>
-        <nuxt-link :to="localePath('/museum')" v-text="$t('pages.museum.h1')" />
+        <nuxt-link
+          class="text-link"
+          :to="localePath('/museum')"
+          v-text="$t('pages.museum.h1')"
+        />
       </li>
       <li>
         <nuxt-link
+          class="text-link"
           :to="localePath('/visitors')"
           v-text="$t('pages.visitors.h1')"
         />
       </li>
       <li>
-        <nuxt-link :to="localePath('/events')" v-text="$t('pages.events.h1')" />
+        <nuxt-link
+          class="text-link"
+          :to="localePath('/events')"
+          v-text="$t('pages.events.h1')"
+        />
       </li>
     </ul>
   </nav>
