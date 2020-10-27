@@ -1,8 +1,8 @@
 <template>
-  <section>
+  <section class="tabs-wrapper">
     <!-- TODO: set heading level via props -->
     <h2><slot name="heading" /></h2>
-    <div role="tablist">
+    <div role="tablist" class="tabs-list">
       <button
         v-for="tab in tabs"
         :id="`tabs-${tab.id}`"
@@ -98,5 +98,12 @@ export default {
 </script>
 
 <style lang="scss">
-//
+.tabs-wrapper {
+  h2,
+  .tabs-list {
+    max-width: $w-content-max - ($s-xl * 2);
+    padding: 0 $s-xl;
+    margin: 0 auto;
+  }
+}
 </style>

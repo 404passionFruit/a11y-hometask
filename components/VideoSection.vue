@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="container">
     <h2>Онлайн-трансляция</h2>
     <iframe
       width="560"

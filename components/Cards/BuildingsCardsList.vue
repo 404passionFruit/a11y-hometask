@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="buildings-grid cards-grid">
     <li v-for="building in buildings" :key="building.id">
       <img src="https://placeimg.com/640/320/arch" :alt="building.imageAlt" />
       <h3 :id="`${building.id}-title`">{{ building.title }}</h3>

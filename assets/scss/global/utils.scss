@@ -35,3 +35,33 @@
     }
   }
 }
+
+.container {
+  max-width: $w-content-max - ($s-xl * 2);
+  padding: $s-xl;
+  margin: 0 auto;
+}
+
+.cards-grid {
+  max-width: $w-content-max - ($s-xl * 2);
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+
+  > li {
+    flex: 0 1 auto;
+    width: 100%;
+    padding: $s-xl;
+    margin: 0;
+
+    @media screen and (min-width: 48rem) {
+      width: 50%;
+    }
+
+    @media screen and (min-width: 78rem) {
+      width: 33.33%;
+    }
+  }
+}

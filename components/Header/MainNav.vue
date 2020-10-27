@@ -22,5 +22,18 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-//
+.nav {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    max-width: $w-content-max;
+    padding: $s-xl;
+    margin: auto;
+  }
+
+  li {
+    padding: $s-xl;
+  }
+}
 </style>

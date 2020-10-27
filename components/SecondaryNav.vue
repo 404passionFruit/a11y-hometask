@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="nav">
     <li>
       <nuxt-link :to="localePath('/tickets')" v-text="$t('pages.tickets.h1')" />
     </li>
@@ -17,5 +17,16 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-//
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  max-width: $w-content-max;
+  padding: $s-xl;
+  margin: auto;
+
+  li {
+    padding: $s-xl;
+  }
+}
 </style>
