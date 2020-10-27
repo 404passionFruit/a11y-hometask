@@ -1,6 +1,7 @@
 <template>
   <main tabindex="-1">
     <h1 class="visually-hidden">{{ $t('pages.homepage.h1') }}</h1>
+    <Carousel />
     <SecondaryNav />
     <TabList :selected-tab="123" :tabs="tabs">
       <!-- TODO: translation -->
@@ -28,6 +29,7 @@ import BuildingsCardsList from '@/components/Cards/BuildingsCardsList'
 import VideoSection from '@/components/VideoSection'
 import SecondaryNav from '@/components/SecondaryNav'
 import TextBlock from '@/components/TextBlock'
+import Carousel from '@/components/Carousel'
 
 const events = [
   {
@@ -115,6 +117,7 @@ export default {
     VideoSection,
     SecondaryNav,
     TextBlock,
+    Carousel,
   },
   data() {
     return {

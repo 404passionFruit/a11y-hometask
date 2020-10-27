@@ -3,7 +3,7 @@
     <div id="page-wrapper" ref="wrapper" tabindex="-1" class="page-wrapper">
       <HeaderComponent />
       <div><Nuxt /></div>
-      <footer>Footer</footer>
+      <!-- <footer>Footer</footer> -->
     </div>
     <div id="global-announcer" aria-live="polite" class="visually-hidden">
       <span
