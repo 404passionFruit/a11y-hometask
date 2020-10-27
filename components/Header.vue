@@ -1,10 +1,12 @@
 <template>
   <header>
-    <SkipLink />
-    <LangSwitch />
-
-    <div class="filler"></div>
-    <Modal />
+    <div>
+      <SkipLink />
+      <LogoLink />
+      <SearchBar />
+      <LangSwitch />
+      <Modal />
+    </div>
     <MainNav />
   </header>
 </template>
@@ -13,10 +15,12 @@
 import SkipLink from '@/components/Header/SkipLink'
 import LangSwitch from '@/components/Header/LangSwitch'
 import MainNav from '@/components/Header/MainNav'
+import LogoLink from '@/components/Header/LogoLink'
+import SearchBar from '@/components/Header/SearchBar'
 import Modal from '@/components/Modal'
 
 export default {
-  components: { SkipLink, LangSwitch, MainNav, Modal },
+  components: { SkipLink, LangSwitch, MainNav, Modal, LogoLink, SearchBar },
 }
 </script>
 
