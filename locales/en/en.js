@@ -29,5 +29,14 @@ export default {
     museum: {
       h1: 'Museum',
     },
+    tickets: {
+      h1: 'Buy a ticket',
+    },
+    friends: {
+      h1: 'Become a friend',
+    },
+    shop: {
+      h1: 'Online store',
+    },
   },
 }
