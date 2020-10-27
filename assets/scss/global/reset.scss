@@ -38,6 +38,7 @@ a {
 img,
 svg {
   max-width: 100%;
+  overflow: hidden;
 }
 
 [tabindex='-1'] {

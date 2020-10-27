@@ -1,10 +1,15 @@
 export default {
   menu: {
+    logo: {
+      alt: 'The Pushkin State Museum of Fine Arts',
+      linkTitle: 'Go to homepage',
+    },
     skiplink: {
       toMain: 'Skip to main',
     },
     locale: {
       change: 'Change language to {lang}',
+      current: 'Current language is {lang}',
       langs: {
         EN: 'English',
         RU: 'Russian',
@@ -16,7 +21,7 @@ export default {
     },
   },
   pages: {
-    homepage: {
+    index: {
       h1: 'The Pushkin State Museum of Fine Arts',
       desc: 'Best of Pushkin museums so far',
     },

@@ -45,9 +45,8 @@ export default {
         this.message = this.$t('menu.announce.onLocaleChange')
       } else {
         // TODO: make this maintainable for nested routes
-        const title = this.$t(
-          `pages.${to.name.split('__')[0].replace('/', '')}.h1`
-        )
+        const path = `pages.${to.name.split('__')[0].replace('/', '')}.h1`
+        const title = this.$t(path)
         this.message = this.$t('menu.announce.onRouteChange', {
           page: title,
         })
@@ -69,6 +68,7 @@ body,
 #__layout,
 .everything {
   height: 100%;
+  width: 100%;
 }
 
 .everything {
@@ -78,6 +78,7 @@ body,
 
 .page-wrapper {
   height: 100%;
+  width: 100%;
   overflow: auto;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;

@@ -1,9 +1,9 @@
 <template>
-  <header>
-    <div>
+  <header class="header">
+    <div class="header-row">
       <SkipLink />
       <LogoLink />
-      <SearchBar />
+      <SearchBar class="search-group" />
       <LangSwitch />
       <Modal />
     </div>
@@ -25,8 +25,21 @@ export default {
 </script>
 
 <style lang="scss">
-//
-.filler {
-  height: 900px;
+.header {
+  max-width: $w-content-max - ($s-xl * 2);
+  padding: $s-xl;
+  margin: auto;
+}
+.header-row {
+  display: flex;
+
+  > * + * {
+    padding-left: $s-m;
+  }
+}
+
+.search-group {
+  flex: 1 1 auto;
+  text-align: right;
 }
 </style>

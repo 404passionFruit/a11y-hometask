@@ -1,6 +1,6 @@
 <template>
-  <main tabindex="-1">
-    <h1 class="visually-hidden">{{ $t('pages.homepage.h1') }}</h1>
+  <main tabindex="-1" aria-labelledby="h1">
+    <h1 class="visually-hidden" id="h1">{{ $t('pages.index.h1') }}</h1>
     <Carousel />
     <SecondaryNav />
     <TabList :selected-tab="123" :tabs="tabs">
@@ -129,12 +129,12 @@ export default {
   },
   head() {
     return {
-      title: this.$t('pages.homepage.h1'),
+      title: this.$t('pages.index.h1'),
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('pages.homepage.desc'),
+          content: this.$t('pages.index.desc'),
         },
       ],
     }
