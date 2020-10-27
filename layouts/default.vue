@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <div ref="wrapper" tabindex="-1" class="page-wrapper">
+  <div class="everything">
+    <div id="page-wrapper" ref="wrapper" tabindex="-1" class="page-wrapper">
       <HeaderComponent />
       <div><Nuxt /></div>
       <footer>Footer</footer>
@@ -14,6 +14,7 @@
         v-text="currentLocale === locale.code ? message : ''"
       ></span>
     </div>
+    <portal-target name="modal"></portal-target>
   </div>
 </template>
 
@@ -62,4 +63,23 @@ export default {
 
 <style lang="scss">
 //
+html,
+body,
+#__nuxt,
+#__layout,
+.everything {
+  height: 100%;
+}
+
+.everything {
+  overflow: hidden;
+  position: relative;
+}
+
+.page-wrapper {
+  height: 100%;
+  overflow: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 </style>

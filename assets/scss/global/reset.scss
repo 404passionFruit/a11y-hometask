@@ -64,3 +64,16 @@ h2 {
 h3 {
   font-size: 2.6rem;
 }
+
+[inert] {
+  pointer-events: none;
+  cursor: default;
+}
+
+[inert],
+[inert] * {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

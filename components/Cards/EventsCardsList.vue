@@ -4,7 +4,7 @@
       <img src="https://placeimg.com/640/320/arch" :alt="event.imageAlt" />
       <h3 :id="`${event.id}-title`">{{ event.title }}</h3>
       <p>
-        Выставка до <datetime>{{ event.deadline }}</datetime>
+        Выставка до <time>{{ event.deadline }}</time>
       </p>
       <p>
         {{ event.desc }}

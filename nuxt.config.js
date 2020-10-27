@@ -18,6 +18,12 @@ export default {
           'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap',
       },
     ],
+    script: [
+      {
+        src:
+          'https://cdn.polyfill.io/v2/polyfill.min.js?features=Map,Set,Element.prototype.matches,Node.prototype.contains',
+      },
+    ],
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
@@ -29,7 +35,7 @@ export default {
   },
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: ['@/plugins/portal.js'],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,

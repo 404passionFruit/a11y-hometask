@@ -27,8 +27,8 @@ export default {}
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    max-width: $w-content-max;
-    padding: $s-xl;
+    max-width: $w-content-max - ($s-xl * 2);
+    padding: 0;
     margin: auto;
   }
 
