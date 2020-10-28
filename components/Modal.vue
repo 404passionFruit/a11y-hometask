@@ -100,7 +100,8 @@ export default {
   right: 0;
   bottom: 0;
   background: rgba(black, 0.5);
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   display: flex;
   align-content: center;
   justify-items: center;

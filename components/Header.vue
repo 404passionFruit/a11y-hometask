@@ -2,7 +2,7 @@
   <header class="header">
     <div class="header-row">
       <SkipLink />
-      <LogoLink />
+      <LogoLink class="logo-link" />
       <SearchBar class="search-group" />
       <LangSwitch />
       <Modal />
@@ -27,17 +27,36 @@ export default {
 <style lang="scss">
 .header-row {
   display: flex;
+  flex-wrap: wrap;
   max-width: $w-content-max - ($s-xl * 2);
   margin: auto;
-  padding: $s-xl;
+  padding: $s-xl $s-m;
 
   > * + * {
     padding-left: $s-m;
+    margin-bottom: $s-s;
   }
 }
 
+.logo-link {
+  max-width: 24rem;
+}
+
 .search-group {
-  flex: 1 1 auto;
-  text-align: right;
+  width: 22rem;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 54rem) {
+  .header-row {
+    > * + * {
+      margin-bottom: 0;
+    }
+  }
+
+  .search-group {
+    flex: 1 1 auto;
+    width: 34rem;
+  }
 }
 </style>

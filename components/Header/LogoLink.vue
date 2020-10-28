@@ -23,7 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 .logo-link {
-  max-width: 20rem;
+  width: 100%;
   display: inline-block;
 
   &:visited {

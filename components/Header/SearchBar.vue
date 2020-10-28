@@ -35,11 +35,14 @@ export default {
 <style lang="scss" scoped>
 //
 .search-form {
+  display: flex;
+
   svg {
     width: 2.4rem;
   }
 
   input {
+    width: 100%;
     border: 2px solid gray;
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -53,14 +56,15 @@ export default {
   }
 
   button {
+    flex: 0 0 auto;
     border: 2px solid gray;
     border-left-color: transparent;
-    margin-left: -0.6em;
+    margin-left: -0.1em;
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
     background: transparent;
     box-shadow: none;
-    padding: 0.7rem 0.6rem 0.2rem;
+    padding: 0.7rem 0.8rem 0.2rem;
     height: (1.6rem * 1.5) + ($s-s * 2) + 0.4rem;
     vertical-align: middle;
     &:focus {
