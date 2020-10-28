@@ -191,11 +191,60 @@
     span {
       display: block;
     }
+
+    input {
+      border: 2px solid gray;
+      border-radius: 4px;
+      padding: $s-xs;
+      height: (1.6rem * 1.5) + ($s-xs * 2) + 0.4rem;
+
+      &:focus {
+        outline: none;
+        border-color: $c-out;
+      }
+    }
   }
 
   .checkbox-label {
     width: 100%;
     margin: $s-m 0;
+    position: relative;
+
+    span {
+      display: inline-block;
+      vertical-align: middle;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        border: 2px solid gray;
+        border-radius: 2px;
+        width: 1.2em;
+        height: 1.2em;
+        margin-right: 0.5em;
+        background: white;
+      }
+    }
+
+    //stylelint-disable-next-line
+    input {
+      position: absolute;
+      width: 1.6em;
+      height: 1.6em;
+      top: 1px;
+      left: -1px;
+      opacity: 0;
+      cursor: pointer;
+
+      &:checked {
+        + span {
+          &::before {
+            background: blue;
+          }
+        }
+      }
+    }
   }
 
   .button {

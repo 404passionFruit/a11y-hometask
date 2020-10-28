@@ -182,6 +182,7 @@ export default {
       border: 2px solid gray;
       border-radius: 4px;
       padding: $s-xs;
+      height: (1.6rem * 1.5) + ($s-s * 2) + 0.4rem;
 
       &:focus {
         outline: none;
@@ -225,8 +226,8 @@ export default {
 
   .button {
     width: 100%;
-    font-size: 1.6rem;
     margin-top: $s-m;
+    height: (1.6rem * 1.5) + ($s-s * 2) + 0.4rem;
   }
 }
 </style>
