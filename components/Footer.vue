@@ -74,7 +74,35 @@
           </li>
         </ul>
       </div>
-      <div>2</div>
+      <div>
+        <form
+          action=""
+          @submit.prevent
+          class="email-form"
+          aria-labelledby="email-form-heading"
+        >
+          <h4 id="email-form-heading">Подписка на новости</h4>
+          <label for="email-input" class="email-label">
+            <span>Email</span>
+            <input
+              id="email-input"
+              type="email"
+              aria-required="true"
+              required
+            />
+          </label>
+          <label for="checkbox-input" class="checkbox-label">
+            <input
+              id="checkbox-input"
+              type="checkbox"
+              aria-required="true"
+              required
+            />
+            <span>Согласен на обработку персональных данных</span>
+          </label>
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </div>
     </div>
   </footer>
 </template>
@@ -107,6 +135,10 @@
   > * {
     flex: 1 1 auto;
     padding: 0 $s-xl;
+
+    @media screen and (min-width: 60rem) {
+      width: 50%;
+    }
   }
 }
 
@@ -141,6 +173,44 @@
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+  }
+}
+
+.email-form {
+  margin: $s-m 0 $s-xxl;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  h4 {
+    margin-bottom: $s-xl;
+    width: 100%;
+  }
+
+  .email-label {
+    span {
+      display: block;
+    }
+  }
+
+  .checkbox-label {
+    width: 100%;
+    margin: $s-m 0;
+  }
+
+  .button {
+    font-size: 1.6rem;
+  }
+
+  @media screen and (min-width: 48rem) {
+    .checkbox-label {
+      order: 2;
+    }
+
+    .button {
+      order: 1;
+      margin-left: $s-m;
+    }
   }
 }
 </style>
