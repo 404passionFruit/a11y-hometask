@@ -45,7 +45,13 @@
             </a>
           </li>
           <li>
-            <a href="/" class="button">
+            <a
+              href="https://telegram.org/"
+              class="button"
+              target="_blank"
+              aria-describedby="newWindowText"
+              rel="noopener noreferrer"
+            >
               <span class="visually-hidden">Телеграм</span>
 
               <svg
@@ -61,7 +67,13 @@
             </a>
           </li>
           <li>
-            <a href="/" class="button">
+            <a
+              href="https://facebook.com/"
+              class="button"
+              target="_blank"
+              aria-describedby="newWindowText"
+              rel="noopener noreferrer"
+            >
               <span class="visually-hidden">Facebook</span>
               <svg
                 focusable="false"

@@ -15,6 +15,9 @@
       ></span>
     </div>
     <portal-target name="modal"></portal-target>
+    <span id="newWindowText" class="visually-hidden"
+      >Откроется в новом окне</span
+    >
   </div>
 </template>
 
