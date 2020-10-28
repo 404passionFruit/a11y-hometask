@@ -1,7 +1,5 @@
 <template>
-  <section class="carousel">
-    <img src="https://placeimg.com/640/320/people" alt="Успешный успех" />
-  </section>
+  <section class="carousel"></section>
 </template>
 
 <script></script>
@@ -12,8 +10,11 @@
   padding: 0;
   margin: auto;
 
-  img {
-    width: 100%;
+  &::before {
+    content: 'На карусель не хватило времени';
+    display: block;
+    padding-top: 100%;
+    background: #f1f1f1;
   }
 }
 </style>
