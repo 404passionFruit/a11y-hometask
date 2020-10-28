@@ -10,7 +10,8 @@
     <div id="form-announcer" role="alert" tabindex="-1" class="status">
       <span v-if="showValidation && !errorsCount" class="success">
         <svg
-          role="presentation"
+          focusable="false"
+          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 477.867 477.867"
         >
@@ -26,7 +27,8 @@
       </span>
       <span v-if="showValidation && errorsCount" class="error-group">
         <svg
-          role="presentation"
+          focusable="false"
+          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 486.463 486.463"
         >
@@ -58,7 +60,8 @@
     <div class="error" id="form-login-name-error">
       <span v-if="showValidation && !isValidName" class="error">
         <svg
-          role="presentation"
+          focusable="false"
+          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 486.463 486.463"
           aria-required="true"

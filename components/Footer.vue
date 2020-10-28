@@ -33,7 +33,8 @@
               <span class="visually-hidden">Почта</span>
 
               <svg
-                role="presentation"
+                focusable="false"
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -48,7 +49,8 @@
               <span class="visually-hidden">Телеграм</span>
 
               <svg
-                role="presentation"
+                focusable="false"
+                aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"
               >
@@ -62,7 +64,8 @@
             <a href="/" class="button">
               <span class="visually-hidden">Facebook</span>
               <svg
-                role="presentation"
+                focusable="false"
+                aria-hidden="true"
                 viewBox="-110 1 511 511.99996"
                 xmlns="http://www.w3.org/2000/svg"
               >

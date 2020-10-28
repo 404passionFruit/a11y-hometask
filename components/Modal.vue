@@ -3,7 +3,8 @@
     <button @click="openModal" class="open-btn">
       <span class="visually-hidden">{{ $t('modal.openButton') }}</span>
       <svg
-        role="presentation"
+        focusable="false"
+        aria-hidden="true"
         viewBox="-42 0 512 512.001"
         xmlns="http://www.w3.org/2000/svg"
       >
@@ -34,7 +35,8 @@
           <button @click="closeModal" class="close-btn">
             <span class="visually-hidden">{{ $t('modal.closeButton') }}</span>
             <svg
-              role="presentation"
+              focusable="false"
+              aria-hidden="true"
               viewBox="0 0 329.26933 329"
               xmlns="http://www.w3.org/2000/svg"
             >
