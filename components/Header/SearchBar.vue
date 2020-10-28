@@ -45,9 +45,10 @@ export default {
     border-bottom-left-radius: 4px;
     padding: $s-s;
     vertical-align: middle;
+    height: (1.6rem * 1.5) + ($s-s * 2) + 0.4rem;
     &:focus {
       outline: none;
-      border-color: #ffc002;
+      border-color: $c-out;
     }
   }
 
@@ -59,11 +60,12 @@ export default {
     border-bottom-right-radius: 4px;
     background: transparent;
     box-shadow: none;
-    padding: 0.75rem 0.6rem 0.2rem;
+    padding: 0.7rem 0.6rem 0.2rem;
+    height: (1.6rem * 1.5) + ($s-s * 2) + 0.4rem;
     vertical-align: middle;
     &:focus {
       outline: none;
-      border-color: #ffc002;
+      border-color: $c-out;
     }
   }
 }

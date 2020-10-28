@@ -14,7 +14,9 @@
       <!-- TODO: translation -->
       <template slot="heading">Музей</template>
       <template v-slot:content="sp">
-        <BuildingsCardsList :buildings="sp.tab.id === 555 ? buildings : []" />
+        <BuildingsCardsList
+          :buildings="sp.tab.id === 555 ? buildings : [buildings[5]]"
+        />
       </template>
     </TabList>
     <VideoSection />

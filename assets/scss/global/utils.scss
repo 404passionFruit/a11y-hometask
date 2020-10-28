@@ -16,7 +16,7 @@
   font-size: 2.2rem;
   padding: $s-xs $s-s;
   border: 2px solid #c7d2e9;
-  transition: color 0.25s ease;
+  transition: color 0.25s ease, background 0.25s ease;
 
   @media (prefers-reduced-motion) {
     transition: none;
@@ -27,13 +27,13 @@
 
     &:focus {
       outline: none;
-      border-color: #ffc002;
+      border-color: $c-out;
     }
 
     &:hover {
-      background: #000;
-      border-color: #000;
-      color: #c7d2e9;
+      background: #0036f4;
+      border-color: #0036f4;
+      color: #fff;
     }
   }
 }
@@ -69,10 +69,10 @@
 }
 
 .text-link {
-  color: green;
+  color: #cc05ad;
 
   &:visited {
-    color: green;
+    color: #cc05ad;
   }
 
   &:hover {
@@ -80,6 +80,6 @@
   }
 
   &:focus {
-    outline: #ffc002;
+    outline: 2px solid blue;
   }
 }

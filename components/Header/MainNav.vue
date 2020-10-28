@@ -32,6 +32,8 @@ export default {}
 
 <style lang="scss" scoped>
 .nav {
+  font-size: 2.2rem;
+
   ul {
     display: flex;
     flex-wrap: wrap;

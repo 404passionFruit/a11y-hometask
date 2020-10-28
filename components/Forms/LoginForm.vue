@@ -185,7 +185,7 @@ export default {
 
       &:focus {
         outline: none;
-        border-color: #ffc002;
+        border-color: $c-out;
       }
     }
   }

@@ -25,5 +25,13 @@ export default {
 .logo-link {
   max-width: 20rem;
   display: inline-block;
+
+  &:visited {
+    color: black;
+  }
+
+  &:focus {
+    outline: 2px solid blue;
+  }
 }
 </style>

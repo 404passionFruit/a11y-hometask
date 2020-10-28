@@ -141,7 +141,7 @@ export default {
   box-shadow: none;
   cursor: pointer;
   line-height: 1;
-  transition: color 0.25s ease;
+  transition: color 0.25s ease, background 0.25s ease;
 
   @media (prefers-reduced-motion) {
     transition: none;
@@ -160,12 +160,12 @@ export default {
 
   &:focus {
     outline: none;
-    border-color: #ffc002;
+    border-color: $c-out;
   }
 
   &:hover {
-    background: #000;
-    border-color: #000;
+    background: #0036f4;
+    border-color: #0036f4;
     color: #fff;
   }
 }
@@ -180,12 +180,12 @@ export default {
 
   &:focus {
     outline: none;
-    border-color: #ffc002;
+    border-color: $c-out;
   }
 
   &:hover {
-    background: #000;
-    border-color: #000;
+    background: #0036f4;
+    border-color: #0036f4;
     color: #fff;
   }
 }

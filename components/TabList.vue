@@ -114,7 +114,7 @@ export default {
 
   button {
     display: inline-block;
-    color: #000;
+    color: #cc05ad;
     font-size: 2.2rem;
     border: none;
     text-decoration: underline;
@@ -128,7 +128,7 @@ export default {
 
     &:focus {
       outline: none;
-      border-color: #ffc002;
+      border-color: $c-out;
     }
 
     + * {
@@ -137,12 +137,13 @@ export default {
   }
 
   button[aria-selected] {
+    color: #000;
     background: #c7d2e9;
     border-radius: 4px;
     text-decoration: none;
     padding: $s-xs $s-s;
     border: 2px solid #c7d2e9;
-    transition: color 0.25s ease;
+    transition: color 0.25s ease, background 0.25s ease;
 
     @media (prefers-reduced-motion) {
       transition: none;
@@ -150,13 +151,13 @@ export default {
 
     &:focus {
       outline: none;
-      border-color: #ffc002;
+      border-color: $c-out;
     }
 
     &:hover {
-      background: #000;
-      border-color: #000;
-      color: #c7d2e9;
+      background: #0036f4;
+      border-color: #0036f4;
+      color: #fff;
     }
   }
 }
